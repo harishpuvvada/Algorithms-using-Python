@@ -5,11 +5,12 @@ Your function should take two inputs:
 a Python list to search through, and the value
 you're searching for.
 Assume the list only has distinct elements,
-meaning there are no repeated values, and 
+meaning there are no repeated values, and
 elements are in a strictly increasing order.
 Return the index of value, or -1 if the value
 doesn't exist in the list."""
 
+# here we are not calling the fucntion recursively but using a while loop to repeatedly change the values of low and high values.
 
 def binary_search(input_array,value):
 
@@ -27,7 +28,7 @@ def binary_search(input_array,value):
 
 		elif(input_array[mid] < value):
 
-			low = mid + 1 
+			low = mid + 1
 
 		else:
 
@@ -40,16 +41,3 @@ test_val1 = 25
 test_val2 = 15
 print binary_search(test_list, test_val1)
 print binary_search(test_list, test_val2)
-
-
-
-
-
-
-
-
-
-
-
-
-

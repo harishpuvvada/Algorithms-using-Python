@@ -15,33 +15,38 @@ with them:
 Everything else has 0 points.
 Use the test cases below to guide you!"""
 
+#Harish's Comments:
+# We write Element(Object) here. Object is just mentioned because every class in python is derived from "Object" class from python.
+
+# we have to write "self. " everytime you access a property,functions  which is in the class.
+
 class Classy(object):
     def __init__(self):
         self.items = []
-        
+
     def addItem(self,stri):
         self.items.append(stri)
-        
+
     def getClassiness(self):
         Classiness = 0
-        
+
         if(self.items>0):
-            
+
             for item in self.items:
                 if(item=="bowtie"):
                     Classiness+=4
-                    
+
                 elif(item=="tophat"):
                     Classiness+=2
-                    
+
                 elif(item=="monocle"):
                     Classiness+=5
-                    
+
                 else:
                     Classiness+=0
-                    
+
         return Classiness
-                    
+
 
 # Test cases
 me = Classy()

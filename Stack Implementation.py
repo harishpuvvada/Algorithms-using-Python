@@ -6,6 +6,9 @@ insert_first, delete_first, push, and pop.
 Think about this while you're implementing:
 why is it easier to add an "insert_first"
 function than just use "append"?"""
+
+
+
 class Element(object):
     def __init__(self, value):
         self.value = value
@@ -46,7 +49,7 @@ class Stack(object):
 
     def pop(self):
         return self.ll.delete_first()
-    
+
 # Test cases
 # Set up some Elements
 e1 = Element(1)

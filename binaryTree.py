@@ -11,6 +11,9 @@
 #
 # Let's get started!
 
+# Harish's Comments:
+# DFS is exploring all nodes as you visit until we hit a leaf (from left to right). This is Pre - order type of DFS
+# Exploring the leaf first and then their parents and so on until root is Post-order type of DFS
 
 class Node(object):
     def __init__(self, value):
@@ -26,7 +29,7 @@ class BinaryTree(object):
         return self.preorder_search(self.root, find_val)
 
     def print_tree(self):
-        return self.preorder_print(self.root, "")[:-1]
+        return self.preorder_print(self.root, "")[:-1] # once the traversal string is returned, we slice the last character so that it wont have an extra character "-" at the end.
 
     def preorder_search(self, start, find_val):
         if start:
@@ -34,6 +37,7 @@ class BinaryTree(object):
                 return True
             else:
                 return self.preorder_search(start.left, find_val) or self.preorder_search(start.right, find_val)
+                #here self.preorder_search(start.left,find_val) is called first and then the other one if returned value is false. Pleasec correct  me if i am wrong.
         return False
 
     def preorder_print(self, start, traversal):
