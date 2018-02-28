@@ -21,7 +21,7 @@ class BST(object):
         self.root = Node(root)
 
     def insert(self, new_val):
-        self.insert_helper(self.root,new_val)
+        self.insert_helper(self.root,new_val) #we don't have to return anything for insert
 
     def search(self, find_val):
         return self.search_helper(self.root,find_val)
