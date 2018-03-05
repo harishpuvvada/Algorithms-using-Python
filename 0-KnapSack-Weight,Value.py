@@ -17,24 +17,22 @@ def knapSack(W , wt , val , n):   #Time Complexity is O(2^n)
         #      max(---- eq for including nth wt-------------------,---- for not including------)
 
 
-def dynamicProg_KP(W , wt , val , n):  #Time Complexity is O(nW)
-
+def dynamicProg_KP(W, wt, val, n): #Time Complexity is O(nW)
     #creating a table using list comprehensions
-    k = [[0 for i in range(W+1)] for j in range(n+1)]  #here "+1" cuz we go from 0 to W,0 to n
+    K = [[0 for x in range(W+1)] for x in range(n+1)] #here "+1" cuz we go from 0 to W,0 to n
 
-
+    # Build table K[][] in bottom up manner
     for i in range(n+1):
         for w in range(W+1):
-            # Base Case
-            if i == 0 or w == 0 :
-                k[i][w] = 0
-            elif(wt[n-1] <= W):
-                k[i][w] = max(val[i-1] + k[i-1][w-wt[i-1]],k[i-1][w])
-                #      max(---- eq for including nth wt-------------------,---- for not including------)
+            if i==0 or w==0:
+                K[i][w] = 0
+            elif (wt[i-1] <= w):
+                K[i][w] = max(val[i-1] + K[i-1][w-wt[i-1]],  K[i-1][w])
             else:
-                k[i][w] = k[i-1][w]
-    print(k) #print table
-    return k[n][W]
+                K[i][w] = K[i-1][w]
+    print(K) #print table
+    return K[n][W]
+
 
 # To test above functions
 val = [60, 100, 120]
