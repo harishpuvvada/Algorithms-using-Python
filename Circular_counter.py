@@ -15,9 +15,8 @@ def harish(int_list, skip):
   skip = skip - 1 #list starts with 0 index
   idx = 0
   while len(int_list)>0:
-    idx = (skip+idx)%len(int_list) #hashing to keep changing the index to every 3rd
+    idx = (skip+idx)%len(int_list) #hashing to keep changing the index to every 3rd, idx should be smaller than len(list)-so using %
     print(int_list.pop(idx))
-
 
 harish(a,3)
 
@@ -30,7 +29,6 @@ int_list = 123456789
 skip = 3
 
 While Iteration:
-
 int_list = 123456789
 len(int_list) = 9
 skip = 2 # as int_list starts from 0

@@ -1,6 +1,6 @@
 """Make a Queue class using a list!
 Hint: You can use any Python list method
-you'd like! Try to write each one in as 
+you'd like! Try to write each one in as
 few lines as possible.
 Make sure you pass the test cases too!"""
 
@@ -10,17 +10,14 @@ class Queue:
         self.storage = [head]
 
     def enqueue(self, new_element):
-    	self.storage.append(new_element).  #append generally appends at the tail 
-        pass
+    	self.storage.append(new_element).  #append generally appends at the tail
 
     def peek(self):
     	return self.storage[0]   # element at head . so storage[0]
-        pass 
 
     def dequeue(self):
     	return self.storage.pop(0)  #pop is used for removing element using index .Here we want to eject element from head.so pop(0)
-        pass
-    
+
 # Setup
 q = Queue(1)
 q.enqueue(2)
