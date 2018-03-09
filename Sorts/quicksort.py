@@ -15,7 +15,7 @@ def partition(array,low,end):
     pivot = array[end] #selecting the right most element as pivot
     pIndex = low
     i = low
-    while(i<end):
+    while(i<end): #so that it wont compare with the last element which is the pivot
         if(array[i] <= pivot):
             array[pIndex],array[i] = array[i],array[pIndex]
             pIndex = pIndex + 1
