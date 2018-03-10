@@ -12,6 +12,4 @@ def pow(x,n): #Complexity is O(logn)
     else:
         return x * pow(x,n-1)
 
-
-
 print(pow(2,3))
