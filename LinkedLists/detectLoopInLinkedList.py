@@ -12,9 +12,7 @@ class LinkedList:
 
     def detectLoop(self):
         current = self.head
-
         slow = fast = self.head
-
         while slow and fast and fast.next:
 
             if fast.next is None:
@@ -27,7 +25,6 @@ class LinkedList:
             fast = fast.next.next
 
         return False
-
 
 
     # Function to insert a new node at the beginning
