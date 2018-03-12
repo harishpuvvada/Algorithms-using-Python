@@ -20,7 +20,6 @@ def firstOccurenceBST(arr,target):
     return result
 
 
-
 arr = [2,10,10,10,10,18,20]  #here our function should return 10 at index 2 even though 10 is also present at 3,4 indices
 
 print("In the given array, target is found first at index ",firstOccurenceBST(arr,10))
