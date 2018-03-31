@@ -4,16 +4,20 @@ Ex: [2 3 5 3 7 9 5 3 7]
 Output: [3 3 3 5 5 7 7 2 9]'''
 
 def sortByFreq():
-    
 
 
 
 
 
 
-    return
 
 
 
-arr = [2 3 5 3 7 9 5 3 7]
+
+
+    return pass
+
+
+
+arr = [2,3,5,3,7,9,5,3,7]
 print(sortByFreq())
