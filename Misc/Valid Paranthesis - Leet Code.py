@@ -16,5 +16,5 @@ class Solution:
             elif char in dict.keys():
                 if (stack == [] or dict[char] != stack.pop()): #.pop spits out last element
                     return False
-            
+
         return stack == []
