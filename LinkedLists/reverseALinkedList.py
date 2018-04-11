@@ -9,8 +9,7 @@ class LinkedList:
         self.head = None
 
     def reverse(self):
-        if self.head is None:
-            print("inside base")
+        if self.head is None: #base condition
             return
 
         previous = None
@@ -38,7 +37,7 @@ class LinkedList:
         print("null")
 
 
-    def push(self,newnode):  #you can insert the new node at the head - This takes less time than inseting at the end
+    def push(self,newnode):  #you can insert the new node at the head - This takes less time than inserting at the end
         newnode = Node(newnode)
         newnode.next = self.head
         self.head = newnode

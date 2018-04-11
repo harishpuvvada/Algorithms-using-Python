@@ -1,9 +1,5 @@
-
-
-input_string=raw_input('Enter string:') 
+input_string=raw_input('Enter string:')
 length= len(input_string)
-
-
 
 #Function to give the first part of the string
 def first_word(text):
@@ -34,7 +30,7 @@ def reverse_string(phrase):
 	for l in phrase:
 		if l == ' ':
 			word_count+=1
-            
+
 	first = ''
 	second = ''
 	first = first_word(phrase)
@@ -43,5 +39,5 @@ def reverse_string(phrase):
 	else:
 		second = second_word(phrase)
 		return reverse_string(second) + " " + first
-    
+
 print reverse_string(input_string)

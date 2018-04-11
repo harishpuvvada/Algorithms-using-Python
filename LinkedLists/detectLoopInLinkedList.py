@@ -33,7 +33,7 @@ class LinkedList:
         new_node.next = self.head
         self.head = new_node
 
-    # Utility function to prit the linked LinkedList
+    # Utility function to print the LinkedList
     def printList(self):
         temp = self.head
         count = 0  #using count to prevent infinite loop
