@@ -40,7 +40,7 @@ def mem_fibonnaci(n):
 for i in range(111):
     print(mem_fibonnaci(i))
 
-#Sol 3) Using inbuild python tool - functool
+''' Sol 3) Using inbuild python tool - functool '''
 
 from functools import lru_cache
 

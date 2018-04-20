@@ -1,3 +1,13 @@
+'''
+Longest palindromic Substring
+
+# Logic:
+# create reverse of given string
+# then call longest common sub seq on these two strings(basic dynamic prog problem)
+# result is longest palindromic sub string
+
+'''
+
 def longestpalindromicSubstring(s):
     s1 = s
     s2 = s[::-1]  # reverse of a string
@@ -26,7 +36,7 @@ def printStr(ss,s1,m,n):
 
 def longestCommonSubSeq(s1, s2):
     m, n = len(s1), len(s2)
-    # if(i==0 or j==0): we dont this case cuz we are initializing matrix with all zeroes
+    # if(i==0 or j==0): we dont use this case cuz we are initializing matrix with all zeroes
     #   return
 
     c = np.zeros((m + 1, n + 1)) #matrix with m+1 rows and n+1 columns - all 0s initially
@@ -54,9 +64,3 @@ def longestCommonSubSeq(s1, s2):
 
 print("Length of longest palindromic substring is",int(longestpalindromicSubstring("aabaadbd")))
 print("Longest palindromic substring is", res)
-
-
-# Logic:
-# I create reverse of given string
-# then call longest common sub seq on these two strings(basic dynamic prog problem)
-# result is longest palindromic sub string
