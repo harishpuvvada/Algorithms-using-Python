@@ -1,6 +1,6 @@
 # Algorithms-using-Python
 
-Questions in the repo are from LeetCode, GeeksforGeeks and HackerRank.
+These Questions are from LeetCode, GeeksforGeeks, HackerRank and some random repos.
 
 I try to avoid one liners in these solutions and try to write as many comments as i can for clear explanation.
 
