@@ -8,20 +8,18 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
-    def reverse(self):
-        if self.head is None: #base condition
+    def reverse(self): '''Using Iterative method''', #Leetcode has recursive solution
+        if head is None:
             return
 
         previous = None
-        current = self.head
+        current = head
 
         while current:
-             current.next, previous, current = previous, current, current.next # procedure 1
-
-             # next = current.next
-             # current.next = previous  #procedure 2
-             # previous = current
-             # current = next
+            next = current.next
+            current.next = previous
+            previous = current
+            current = next
 
         self.head = previous
 
