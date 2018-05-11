@@ -1,5 +1,4 @@
 #A naive recursive implementation of 0-1 Knapsack Problem
-
 # Returns the maximum value that can be put in a knapsack of capacity W
 def knapSack(W , wt , val , n):   #Time Complexity is O(2^n)
 
@@ -17,6 +16,7 @@ def knapSack(W , wt , val , n):   #Time Complexity is O(2^n)
         #      max(---- eq for including nth wt-------------------,---- for not including------)
 
 
+#Using Dynamic programming
 def dynamicProg_KP(W, wt, val, n): #Time Complexity is O(nW)
     #creating a table using list comprehensions
     K = [[0 for x in range(W+1)] for x in range(n+1)] #here "+1" cuz we go from 0 to W,0 to n
@@ -32,6 +32,8 @@ def dynamicProg_KP(W, wt, val, n): #Time Complexity is O(nW)
                 K[i][w] = K[i-1][w]
     print(K) #print table
     return K[n][W]
+
+
 
 
 # To test above functions

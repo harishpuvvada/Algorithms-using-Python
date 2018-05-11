@@ -15,14 +15,12 @@ def index_prod(lst):
 
     while i < len(lst):
 
-
         # Set index as cumulative product
         output[i] = product
 
         # Cumulative product
         product *= lst[i]
 
-        # Move forward
         i +=1
 
         print("output", output)
