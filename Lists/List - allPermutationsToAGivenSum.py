@@ -1,15 +1,20 @@
+"""Given a list of integers and a target, print subset of list which add up to target.
+Note: Can be more than one subset """
+
+
+
 def subset_sum(numbers, target, partial=[]):
-    print(partial)
+    #print(partial)
     s = sum(partial)
 
     if(s == target):
         print("sum of ",partial,"=",target)
 
-    if s>= target:
+    if s >= target:
         return
 
     for i in range(len(numbers)):
-        print("iteration",i)
+        #print("iteration",i)
         n = numbers[i]
         rest = numbers[i+1:]
         subset_sum(rest,target,partial + [n])

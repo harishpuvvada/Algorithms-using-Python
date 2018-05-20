@@ -7,10 +7,12 @@ For example, given [0,1,2,4,5,7], return ["0->2","4->5","7"].
 
 def summaryRanges(arr):
     summary = []
+    
     if len(arr) == 1:         # base condition
         return [str(arr[0])]
 
     i = 0
+
     while (i < len(arr)):
         temp = ""
         start = str(arr[i])

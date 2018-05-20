@@ -30,6 +30,7 @@ if __name__ == '__main__':
             namscore[score].append(name)  #if score already exists, append to list
         else:
             namscore[score] = [name]  #if not, create a new list
+            
     k = sorted(namscore.keys())  #sorting keys
     sol = namscore[k[1]]   # storing the values of second min value in "sol"
     for i in sorted(sol):  # to print them in alphabetical order

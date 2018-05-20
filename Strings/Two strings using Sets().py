@@ -1,4 +1,5 @@
 #Hacker rank Two strings problem using set()
+
 import sys
 
 def twoStrings(s1, s2):

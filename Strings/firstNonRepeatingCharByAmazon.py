@@ -15,7 +15,7 @@ def firstNotRepeatingCharacter(s): #this returns first non repeating character
     return "_"
 
 
-class Solution:  #this returns index of first non repeating character
+class Solution:  #this returns index of first non repeating character - from leetcode
     def firstUniqChar(self, s):
         """
         :type s: str

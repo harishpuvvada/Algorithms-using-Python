@@ -11,7 +11,6 @@ Output : -1
 
 def profit(stock_prices): ''' Complexity = O(n) '''
 
-    # Check length
     if len(stock_prices) < 2:
         raise Exception('Need at least two stock prices!')
 

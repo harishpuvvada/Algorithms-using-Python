@@ -1,3 +1,6 @@
+""" Given a list of integers, find max 3 numbered product"""
+
+
 import sys
 
 def solution(lis):

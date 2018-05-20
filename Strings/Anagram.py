@@ -1,3 +1,5 @@
+"""Find if two strings are anagrams of each other."""
+
 def anagram(s1,s2):
     c1 = [0]*26
     c2 = [0]*26
@@ -12,6 +14,7 @@ def anagram(s1,s2):
 
     j = 0
     stillOK = True
+    
     while j<26 and stillOK:
         if c1[j]==c2[j]:
             j = j + 1

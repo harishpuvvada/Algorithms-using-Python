@@ -24,7 +24,6 @@ def second_word(text):
 	return second_word_updated
 
 
-
 def reverse_string(phrase):
 	word_count=0
 	for l in phrase:

@@ -15,5 +15,5 @@ class Solution(object):
         :type k: int
         :rtype: List[int]
         """
-        c = collections.Counter(nums)
-        return [x[0] for x in c.most_common(k)] #Here x is a tuple. only tuples can form keys not lists.
+        c = collections.Counter(nums) #returns a dict with {num : how many times this num appeared in the list}
+        return [x[0] for x in c.most_common(k)] # Here x is a tuple. only tuples can form keys not lists.
