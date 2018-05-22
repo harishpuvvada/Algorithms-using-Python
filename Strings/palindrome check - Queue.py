@@ -16,5 +16,11 @@ def palchecker(aString):
 
     return stillEqual
 
+
+def palindrome(string):
+    if string == string[::-1]:
+        return True
+    return False
+
 print(palchecker("lsdkjfskf"))
 print(palchecker("radar"))
