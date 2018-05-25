@@ -10,6 +10,7 @@ def twoStrings(s1, s2):
     return "NO"
 
 q = int(input().strip())
+
 for a0 in range(q):
     s1 = input().strip()
     s2 = input().strip()
